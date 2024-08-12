@@ -1,0 +1,345 @@
+.no-scroll {
+    overflow: hidden;
+}
+
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Dark mode style */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Top navigation style */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    padding-left: 500px;
+}
+
+.topnav a {
+    float: none;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #664d34;
+    color: white;
+}
+
+/* Sidebar styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    color: white;
+}
+
+.createAccount {
+    background-color: rgb(186, 162, 119);
+    padding: 12px 15px;
+    margin: 17px 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.intro-para {
+    color: grey;
+    font-size: 20px;
+    width: fit-content;
+    display: inline-block;
+    max-width: calc(100% / 1.6);
+    white-space: normal;
+    border-right: solid 1px white;
+    border-left: solid 1px white;
+    padding:10px 13px;
+    border-radius:10px;
+}
+
+.welcome_header {
+    color: rgb(179, 148, 148);
+    margin: 0;
+    font-size: 30px;
+}
+
+.createAccount {
+    cursor: pointer;
+}
+
+.createAccount:hover {
+    background-color: #575757;
+}
+
+.blog-card {
+    border: solid white 1px;
+    opacity: 0.7;
+    border-top-right-radius:30px;
+    border-top-left-radius:30px;
+    border-top:none;
+    border-left: none;
+    border-bottom: none;
+    padding: 16px;
+    text-align: center;
+    width: calc(30% - 1px); 
+    display: inline-block;
+    height: 30vh;
+    margin:5px;
+    cursor: pointer;
+    box-shadow: 15px 20px 79px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    opacity:1;
+}
+
+.blog-card-image {
+    max-width: 100%;
+    height: 30%;
+    border-radius: 8px;
+}
+
+.blog-card-title {
+    font-size: 1.2em;
+    margin: 12px 0;
+}
+
+.blog-card-intro {
+    font-size: 1em;
+    color: #666;
+}
+
+.blog-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow-y: none;
+    position: relative;
+    width:100wv;
+}
+
+.bd_blogcard {
+    overflow: hidden;
+    position: relative;
+}
+
+.aboutUs_body{
+    overflow: auto;
+    justify-content: center;   
+}
+.aboutUs_header{
+    font-size: 32px;
+    color:#575757;
+    text-align: center;
+    margin:0px 10px 14px 0;
+    border-bottom: solid 1px black;
+    padding: 10px;
+}
+.aboutUs_description{
+    text-align: center;
+    margin:8px 12px;
+    padding:10px 12px;
+    border-bottom: solid 1px black;
+}
+.footer{
+    text-align: center;
+    margin: 10px 14px 10px 13px;
+    padding: 5px 9px;
+    background-color:#666;
+    COLOR:white;
+}
+a{
+    text-decoration: none;
+    color:rgb(214, 186, 186);
+    font-style:oblique;
+
+}
+.active-link{
+    color:rgb(233, 7, 7);
+    font-weight: bold;
+}
+
+.navigation{
+    border-bottom: white 1px solid;
+    width:70%;
+}
+
+.explore-container{
+    padding:20px;
+}
+.blog-posts{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+.blog-post{
+    background-color: rgba(216, 135, 114, 0.6);
+    opacity:0.8;
+    border:solid 1px black;
+    padding:20px;
+    width:calc(33.333% - 40px);
+    box-sizing:border-box;
+    cursor:pointer;
+}
+.blog-post:hover{
+    opacity: 1;
+}
+.blog-post h2{
+    margin:2px;
+}
+.blog-post p{
+    margin-top:10px;
+}
+.read-more{
+    background-color:coral;
+    padding:10px 12px;
+    text-decoration: none;
+    cursor:pointer;
+    color:white;
+}
+.read-more:hover{
+    background-color:#a0201e;
+}
+.faq-container{
+    padding:20px;
+}
+.faq-list{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.faq-item{
+    background-color: rgb(158, 204, 158);
+    border:1px solid #ddd;
+    padding:20px;
+}
+.faq-item h3{
+    margin-top:0;
+}
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .form-container:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-group input:focus {
+    border-color: #C231;
+    outline: none;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    background-color: #C231;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background-color: #a0201e;
+  }
+  
+  @media (max-width: 480px) {
+    .form-container {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .form-group input {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .submit-btn {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
